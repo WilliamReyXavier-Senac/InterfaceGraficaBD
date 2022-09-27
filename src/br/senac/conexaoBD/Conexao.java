@@ -24,8 +24,8 @@ public class Conexao {
             Class.forName(driver);
             conexao = DriverManager.getConnection(url, user, password);
             return conexao;
-        } catch (Exception elefante) {
-            System.out.println(elefante);
+        } catch (Exception e) {
+            System.out.println(e);
             return null;
         }
 
